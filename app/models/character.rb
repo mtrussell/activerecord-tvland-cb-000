@@ -12,6 +12,7 @@ class Character < ActiveRecord::Base
     show = Show.new(:name => @name)
     self.show = show
     self.save
+    show
   end
 
 end
